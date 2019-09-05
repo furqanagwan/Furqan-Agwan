@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C301F5E0231D7305009B6A25 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301F5DF231D7305009B6A25 /* EducationView.swift */; };
+		C30FA031231FA9BE00E68F1B /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FA030231FA9BE00E68F1B /* Components.swift */; };
 		C321E2D1231D5C9F003097FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E2D0231D5C9F003097FE /* AppDelegate.swift */; };
 		C321E2D3231D5C9F003097FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E2D2231D5C9F003097FE /* SceneDelegate.swift */; };
-		C321E2D5231D5C9F003097FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E2D4231D5C9F003097FE /* ContentView.swift */; };
+		C321E2D5231D5C9F003097FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E2D4231D5C9F003097FE /* MainView.swift */; };
 		C321E2D7231D5CA1003097FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C321E2D6231D5CA1003097FE /* Assets.xcassets */; };
 		C321E2DA231D5CA1003097FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C321E2D9231D5CA1003097FE /* Preview Assets.xcassets */; };
 		C321E2DD231D5CA1003097FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C321E2DB231D5CA1003097FE /* LaunchScreen.storyboard */; };
+		C330804B23212B5800119871 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C330804A23212B5800119871 /* Data.swift */; };
+		C34F6DB5231E78D400478CD6 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F6DB4231E78D400478CD6 /* AboutView.swift */; };
+		C34F6DB7231E7A3F00478CD6 /* EmploymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F6DB6231E7A3F00478CD6 /* EmploymentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C301F5DF231D7305009B6A25 /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
+		C30FA030231FA9BE00E68F1B /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		C321E2CD231D5C9F003097FE /* Furqan Agwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Furqan Agwan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C321E2D0231D5C9F003097FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C321E2D2231D5C9F003097FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C321E2D4231D5C9F003097FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C321E2D4231D5C9F003097FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C321E2D6231D5CA1003097FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C321E2D9231D5CA1003097FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C321E2DC231D5CA1003097FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C321E2DE231D5CA1003097FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C330804A23212B5800119871 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C34F6DB4231E78D400478CD6 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		C34F6DB6231E7A3F00478CD6 /* EmploymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmploymentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C301F5DE231D72E3009B6A25 /* Sub Views */ = {
+			isa = PBXGroup;
+			children = (
+				C301F5DF231D7305009B6A25 /* EducationView.swift */,
+				C34F6DB6231E7A3F00478CD6 /* EmploymentView.swift */,
+				C34F6DB4231E78D400478CD6 /* AboutView.swift */,
+			);
+			path = "Sub Views";
+			sourceTree = "<group>";
+		};
 		C321E2C4231D5C9F003097FE = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +76,9 @@
 		C321E2CF231D5C9F003097FE /* Furqan Agwan */ = {
 			isa = PBXGroup;
 			children = (
-				C321E2D0231D5C9F003097FE /* AppDelegate.swift */,
-				C321E2D2231D5C9F003097FE /* SceneDelegate.swift */,
-				C321E2D4231D5C9F003097FE /* ContentView.swift */,
-				C321E2D6231D5CA1003097FE /* Assets.xcassets */,
-				C321E2DB231D5CA1003097FE /* LaunchScreen.storyboard */,
-				C321E2DE231D5CA1003097FE /* Info.plist */,
+				C321E2E8231D5CEF003097FE /* Supporting Files */,
+				C321E2E7231D5CE6003097FE /* Model */,
+				C321E2E5231D5CD3003097FE /* View */,
 				C321E2D8231D5CA1003097FE /* Preview Content */,
 			);
 			path = "Furqan Agwan";
@@ -73,6 +90,44 @@
 				C321E2D9231D5CA1003097FE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C321E2E5231D5CD3003097FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C301F5DE231D72E3009B6A25 /* Sub Views */,
+				C321E2DB231D5CA1003097FE /* LaunchScreen.storyboard */,
+				C321E2D4231D5C9F003097FE /* MainView.swift */,
+				C321E2E6231D5CDA003097FE /* View Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C321E2E6231D5CDA003097FE /* View Components */ = {
+			isa = PBXGroup;
+			children = (
+				C30FA030231FA9BE00E68F1B /* Components.swift */,
+			);
+			path = "View Components";
+			sourceTree = "<group>";
+		};
+		C321E2E7231D5CE6003097FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C330804A23212B5800119871 /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C321E2E8231D5CEF003097FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C321E2D6231D5CA1003097FE /* Assets.xcassets */,
+				C321E2DE231D5CA1003097FE /* Info.plist */,
+				C321E2D0231D5C9F003097FE /* AppDelegate.swift */,
+				C321E2D2231D5C9F003097FE /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +202,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C321E2D1231D5C9F003097FE /* AppDelegate.swift in Sources */,
+				C301F5E0231D7305009B6A25 /* EducationView.swift in Sources */,
 				C321E2D3231D5C9F003097FE /* SceneDelegate.swift in Sources */,
-				C321E2D5231D5C9F003097FE /* ContentView.swift in Sources */,
+				C30FA031231FA9BE00E68F1B /* Components.swift in Sources */,
+				C330804B23212B5800119871 /* Data.swift in Sources */,
+				C321E2D5231D5C9F003097FE /* MainView.swift in Sources */,
+				C34F6DB7231E7A3F00478CD6 /* EmploymentView.swift in Sources */,
+				C34F6DB5231E78D400478CD6 /* AboutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,18 +345,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Furqan Agwan/Preview Content\"";
 				DEVELOPMENT_TEAM = 468QJW47GZ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Furqan Agwan/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Furqan Agwan/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Furqan-Agwan.Furqan-Agwan";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,18 +367,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Furqan Agwan/Preview Content\"";
 				DEVELOPMENT_TEAM = 468QJW47GZ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Furqan Agwan/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Furqan Agwan/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Furqan-Agwan.Furqan-Agwan";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
