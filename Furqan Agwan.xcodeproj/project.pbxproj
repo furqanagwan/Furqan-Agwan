@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C301F5E0231D7305009B6A25 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301F5DF231D7305009B6A25 /* EducationView.swift */; };
 		C30FA031231FA9BE00E68F1B /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FA030231FA9BE00E68F1B /* Components.swift */; };
+		C31AFD542327BD70008A4999 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C31AFD532327BD70008A4999 /* SwifterSwift */; };
 		C321E2D1231D5C9F003097FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E2D0231D5C9F003097FE /* AppDelegate.swift */; };
 		C321E2D3231D5C9F003097FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E2D2231D5C9F003097FE /* SceneDelegate.swift */; };
 		C321E2D5231D5C9F003097FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E2D4231D5C9F003097FE /* MainView.swift */; };
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C31AFD542327BD70008A4999 /* SwifterSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = "Furqan Agwan";
+			packageProductDependencies = (
+				C31AFD532327BD70008A4999 /* SwifterSwift */,
+			);
 			productName = "Furqan Agwan";
 			productReference = C321E2CD231D5C9F003097FE /* Furqan Agwan.app */;
 			productType = "com.apple.product-type.application";
@@ -174,6 +179,9 @@
 				Base,
 			);
 			mainGroup = C321E2C4231D5C9F003097FE;
+			packageReferences = (
+				C31AFD522327BD70008A4999 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+			);
 			productRefGroup = C321E2CE231D5C9F003097FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -406,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C31AFD522327BD70008A4999 /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C31AFD532327BD70008A4999 /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C31AFD522327BD70008A4999 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C321E2C5231D5C9F003097FE /* Project object */;
 }

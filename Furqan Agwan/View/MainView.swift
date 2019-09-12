@@ -26,7 +26,7 @@ struct MainView: View {
                     
             }
             .tag(3)
-        }.accentColor(Color.red)
+        }.accentColor(Color.red).edgesIgnoringSafeArea(.top)
     }
 }
 

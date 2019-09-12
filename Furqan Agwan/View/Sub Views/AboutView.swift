@@ -6,6 +6,7 @@ struct AboutView: View {
     
     var body: some View {
         GeometryReader { geometry in
+             LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
         VStack {
             HStack(alignment: .center){
                 CircleImage(image: Image("Furqan Agwan"))

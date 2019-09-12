@@ -5,6 +5,7 @@ struct EducationView: View {
         
         NavigationView {
             List {
+                
                 Text("")
             }
             .navigationBarTitle(Text("Education"))
