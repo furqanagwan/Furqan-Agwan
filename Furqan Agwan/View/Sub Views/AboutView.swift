@@ -3,29 +3,24 @@ import SwiftUI
 struct AboutView: View {
     
     @State var isPressed: Bool = false
+    let userTitle: String = "Account"
+    
     
     var body: some View {
-        GeometryReader { geometry in
-             LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
-        VStack {
-            HStack(alignment: .center){
-                CircleImage(image: Image("Furqan Agwan"))
+        NavigationView {
+            List {
+                Section {
+                    userlistCell(cellImageName: "Furqan Agwan", cellName: "Furqan Agwan", additionalInfo: "furqankadri@gmail.com")
+                }
+                Section(header: Text("Social"), content: {
+                    userlistCell(cellImageName: "", cellName: "GitHub", additionalInfo: "furqanagwan")
+                    userlistCell(cellImageName: "", cellName: "LinkedIn", additionalInfo: "Furqan Agwan")
+                    userlistCell(cellImageName: "", cellName: "Twitter", additionalInfo: "@FurqanKadri")
+                    userlistCell(cellImageName: "", cellName: "GitHub", additionalInfo: "furqanagwan")
+                })
             }
-            .padding(.top, 5)
-            .fixedSize()
-            
-            Text("Furqan Agwan")
-            
-            ScrollView {
-                Text("Hi there! This application was created to showcase my personal achivements and work expericence. It was created using Swift 5 and Apple's lates UI framework (SwiftUI).")
-                    .multilineTextAlignment(.center)
-                
-            }.frame(width: nil, height: nil, alignment: .center)
-        }
-    }
-}
-    var popUpView: some View {
-        Text("Modal")
+            .navigationBarTitle(Text(userTitle), displayMode: .inline)
+        }.listStyle(GroupedListStyle())
     }
 }
 

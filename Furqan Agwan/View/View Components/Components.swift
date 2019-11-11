@@ -3,6 +3,32 @@ import SwiftUI
 struct CircleImage: View {
     
     var image: Image
+    var height: CGFloat
+    var width: CGFloat
+    @State var showAboutView: Bool = false
+    
+    var body: some View {
+        Button(action: {
+            self.showAboutView.toggle()
+        }) {
+            image
+                .resizable()
+                .clipShape(Circle())
+                .overlay(
+                    Circle().stroke(Color.black, lineWidth: 1))
+                .shadow(radius: 10)
+                .frame(width: width, height: height, alignment: .center)
+        }.sheet(isPresented: $showAboutView) {
+            AboutView()
+        }
+    }
+}
+
+struct CircleImageStatic: View {
+    
+    var image: Image
+    var height: CGFloat
+    var width: CGFloat
     
     var body: some View {
         image
@@ -11,88 +37,67 @@ struct CircleImage: View {
             .overlay(
                 Circle().stroke(Color.black, lineWidth: 1))
             .shadow(radius: 10)
-            .frame(width: 80, height: 80, alignment: .center)
+            .frame(width: width, height: height, alignment: .center)
+    }
+}
+
+struct naviagtionBarLeftItem: View {
+    var body: some View{
+        Text(getCurrentDayString())
+            .foregroundColor(Color.gray)
+            .multilineTextAlignment(.leading)
+    }
+}
+
+struct navigationBarRightItem: View{
+    var body: some View{
+        CircleImage(image: Image("Furqan Agwan"), height: 45, width: 45)
     }
 }
 
 
-struct RoundedCard: View {
+struct navigationBarRightItemDone: View{
     
-    var logoImage: Image
-    var rectangleRadius: CGFloat
-    var height: CGFloat
-    var width: CGFloat
-    var title: String
-    var subtitle: String
+    @Environment (\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View{
-        VStack {
-            ZStack{
-                RoundedRectangle(cornerRadius: rectangleRadius).foregroundColor(.white)
-                HStack{
-                    logoImage.resizable().scaledToFit().frame(width: 200, height: 200, alignment: .center)
-                }
-                HStack{
-                    
-                    VStack(alignment: .leading, spacing: 3){
-                        Text(verbatim: title).font(.title).fontWeight(.bold).foregroundColor(.black).multilineTextAlignment(.leading)
-                        Text(verbatim: subtitle).font(.subheadline).fontWeight(.medium).foregroundColor(.black).multilineTextAlignment(.leading)
-                      
-                    }.padding(.trailing, 10)
-                }.position(x: 70, y: 305)
-            }.frame(width: width, height: height, alignment: .center)
-        }.frame(width: width, height: height, alignment: .center)
+        Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+        }) {
+            Text("Done")
+                .foregroundColor(Color.blue)
+        }
     }
 }
 
-
-struct openBubble: View{
+struct userlistCell: View{
     
-    var title: String
+    let cellImageName: String
+    let cellName: String
+    let additionalInfo: String
+    
     var body: some View{
         
-        ZStack{
-             RoundedRectangle(cornerRadius: 15).foregroundColor(Color.black).frame(width: 70, height: 30, alignment: .center)
-            Text(verbatim: title)
-                .font(.caption)
-                .fontWeight(.bold)
-                .foregroundColor(Color.white)
-                .multilineTextAlignment(.center)
+        HStack(alignment: VerticalAlignment.center, spacing: 0) {
+            VStack{
+                CircleImageStatic(image: Image(cellImageName), height: 60, width: 60)
+            }.padding(.trailing, 15)
+            
+            VStack(alignment: HorizontalAlignment.leading, spacing: 3, content: {
+                Text(cellName)
+                Text(additionalInfo)
+                    .foregroundColor(Color.gray)
+            })
         }
-       
-
+        
     }
 }
 
 
-//struct  RoundedCardDetail: View {
-//
-//
-//    var body: some View{
-//        VStack {
-//            ZStack{
-//                RoundedRectangle(cornerRadius: 20).foregroundColor(.red)
-//
-//            }
-//        }
-//    }
-//}
 
-
-struct openBubbleView_Previews: PreviewProvider {
+struct View_Previews: PreviewProvider {
     static var previews: some View {
-        openBubble(title: "OPEN")
+        userlistCell(cellImageName: "Furqan Agwan" , cellName: "Furqan Agwan", additionalInfo: "furqankadri@gmail.com")
+            .previewLayout(.fixed(width: 400, height: 150))
     }
 }
-
-
-struct RoundedCardView_Previews: PreviewProvider {
-    static var previews: some View {
-        RoundedCard(logoImage: Image("BAE"), rectangleRadius: 20, height: 350, width: 300, title: "NEXT LTD", subtitle: "Sales Assistant")
-    }
-}
-//struct RoundedCardDetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RoundedCardDetail()
-//    }
-//}

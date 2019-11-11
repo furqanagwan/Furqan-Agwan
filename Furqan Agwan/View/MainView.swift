@@ -10,22 +10,11 @@ struct MainView: View {
                     CustomTab(tabName: "Education", tabImage: UIImage(systemName: "book.fill")!)
             }
             .tag(1)
-            
-            
             EmploymentView()
                 .tabItem {
                     CustomTab(tabName: "Employment", tabImage: UIImage(systemName: "briefcase.fill")!)
-                    
             }
             .tag(2)
-            
-            
-            
-            AboutView()
-                .tabItem {CustomTab(tabName: "About", tabImage: UIImage(systemName: "person.fill")!)
-                    
-            }
-            .tag(3)
         }.accentColor(Color.red).edgesIgnoringSafeArea(.top)
     }
 }
