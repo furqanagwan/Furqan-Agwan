@@ -1,11 +1,14 @@
 import SwiftUI
+import UIKit
+import WebKit
 
 struct CircleImage: View {
+    
+    @State var showAboutView: Bool = false
     
     var image: Image
     var height: CGFloat
     var width: CGFloat
-    @State var showAboutView: Bool = false
     
     var body: some View {
         Button(action: {
@@ -19,7 +22,7 @@ struct CircleImage: View {
                 .shadow(radius: 10)
                 .frame(width: width, height: height, alignment: .center)
         }.sheet(isPresented: $showAboutView) {
-            AboutView()
+            AboutView(isPressed: self.$showAboutView)
         }
     }
 }
@@ -51,28 +54,28 @@ struct naviagtionBarLeftItem: View {
 
 struct navigationBarRightItem: View{
     var body: some View{
-        CircleImage(image: Image("Furqan Agwan"), height: 45, width: 45)
+        CircleImage(image: Image("Furqan Agwan"), height: 40, width: 40)
     }
 }
 
 
 struct navigationBarRightItemDone: View{
     
-    @Environment (\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Binding var isOpened: Bool
     
     var body: some View{
         Button(action: {
-            self.presentationMode.wrappedValue.dismiss()
+            self.isOpened.toggle()
         }) {
             Text("Done")
-                .foregroundColor(Color.blue)
+                .foregroundColor(Color(UIColor(hexString: "E66E64")!))
         }
     }
 }
 
 struct userlistCell: View{
     
-    let cellImageName: String
+    let cellImage: UIImage
     let cellName: String
     let additionalInfo: String
     
@@ -80,7 +83,7 @@ struct userlistCell: View{
         
         HStack(alignment: VerticalAlignment.center, spacing: 0) {
             VStack{
-                CircleImageStatic(image: Image(cellImageName), height: 60, width: 60)
+                CircleImageStatic(image: Image(uiImage: cellImage), height: 60, width: 60)
             }.padding(.trailing, 15)
             
             VStack(alignment: HorizontalAlignment.leading, spacing: 3, content: {
@@ -93,11 +96,47 @@ struct userlistCell: View{
     }
 }
 
+struct userlistCellOptions: View{
+    
+    let cellImage: UIImage
+    let cellName: String
+    let additionalInfo: String
+    
+    var body: some View{
+        
+        HStack(alignment: VerticalAlignment.center, spacing: 0) {
+            VStack{
+                Image(uiImage: cellImage)
+            }
+            .padding(.trailing, 15)
+            VStack(alignment: HorizontalAlignment.leading, spacing: 3, content: {
+                Text(cellName)
+                Text(additionalInfo)
+                    .foregroundColor(Color.gray)
+            })
+        }
+        
+    }
+}
 
+struct CustomTab: View{
+    
+    var tabName: String
+    var tabImage: UIImage
+    
+    var body: some View{
+        
+        VStack {
+            Text(verbatim: tabName)
+            Image(uiImage: tabImage)
+        }
+        
+    }
+}
 
-struct View_Previews: PreviewProvider {
+struct userlistCellOptions_Preview: PreviewProvider {
     static var previews: some View {
-        userlistCell(cellImageName: "Furqan Agwan" , cellName: "Furqan Agwan", additionalInfo: "furqankadri@gmail.com")
+        userlistCellOptions(cellImage: Icons.Github, cellName: "Furqan Agwan", additionalInfo: "furqankadri@gmail.com")
             .previewLayout(.fixed(width: 400, height: 150))
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A67735F997F767797C8799C1 /* Pods_Furqan_Agwan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710D1FCFB3DD918D138A55C9 /* Pods_Furqan_Agwan.framework */; };
 		C301F5E0231D7305009B6A25 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301F5DF231D7305009B6A25 /* EducationView.swift */; };
 		C30FA031231FA9BE00E68F1B /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FA030231FA9BE00E68F1B /* Components.swift */; };
 		C31AFD542327BD70008A4999 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C31AFD532327BD70008A4999 /* SwifterSwift */; };
@@ -19,10 +20,12 @@
 		C330804B23212B5800119871 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C330804A23212B5800119871 /* Data.swift */; };
 		C34F6DB5231E78D400478CD6 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F6DB4231E78D400478CD6 /* AboutView.swift */; };
 		C34F6DB7231E7A3F00478CD6 /* EmploymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F6DB6231E7A3F00478CD6 /* EmploymentView.swift */; };
+		C3AABEE9237AE6730058D61C /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AABEE8237AE6730058D61C /* Icons.swift */; };
 		C3F129E62379E8F20039561D /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F129E52379E8F20039561D /* URL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		710D1FCFB3DD918D138A55C9 /* Pods_Furqan_Agwan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Furqan_Agwan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C301F5DF231D7305009B6A25 /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
 		C30FA030231FA9BE00E68F1B /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		C321E2CD231D5C9F003097FE /* Furqan Agwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Furqan Agwan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,7 +39,10 @@
 		C330804A23212B5800119871 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C34F6DB4231E78D400478CD6 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C34F6DB6231E7A3F00478CD6 /* EmploymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmploymentView.swift; sourceTree = "<group>"; };
+		C3AABEE8237AE6730058D61C /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		C3F129E52379E8F20039561D /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		D184FCA0AAA0C62BFC2E8875 /* Pods-Furqan Agwan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Furqan Agwan.debug.xcconfig"; path = "Target Support Files/Pods-Furqan Agwan/Pods-Furqan Agwan.debug.xcconfig"; sourceTree = "<group>"; };
+		DE815BF0F060E8E4787E8ED2 /* Pods-Furqan Agwan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Furqan Agwan.release.xcconfig"; path = "Target Support Files/Pods-Furqan Agwan/Pods-Furqan Agwan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +51,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C31AFD542327BD70008A4999 /* SwifterSwift in Frameworks */,
+				A67735F997F767797C8799C1 /* Pods_Furqan_Agwan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		307E2C6E6051D5BA4E285617 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				710D1FCFB3DD918D138A55C9 /* Pods_Furqan_Agwan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C301F5DE231D72E3009B6A25 /* Sub Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +81,8 @@
 			children = (
 				C321E2CF231D5C9F003097FE /* Furqan Agwan */,
 				C321E2CE231D5C9F003097FE /* Products */,
+				DCE38E5E68FEFE9A1CF2F80A /* Pods */,
+				307E2C6E6051D5BA4E285617 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,8 +156,18 @@
 			isa = PBXGroup;
 			children = (
 				C3F129E52379E8F20039561D /* URL.swift */,
+				C3AABEE8237AE6730058D61C /* Icons.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		DCE38E5E68FEFE9A1CF2F80A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D184FCA0AAA0C62BFC2E8875 /* Pods-Furqan Agwan.debug.xcconfig */,
+				DE815BF0F060E8E4787E8ED2 /* Pods-Furqan Agwan.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C321E2E1231D5CA1003097FE /* Build configuration list for PBXNativeTarget "Furqan Agwan" */;
 			buildPhases = (
+				F6BDC7FE00ECFA0AC64B519E /* [CP] Check Pods Manifest.lock */,
 				C321E2C9231D5C9F003097FE /* Sources */,
 				C321E2CA231D5C9F003097FE /* Frameworks */,
 				C321E2CB231D5C9F003097FE /* Resources */,
+				F8FB916376049EB271E79C4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +244,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F6BDC7FE00ECFA0AC64B519E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Furqan Agwan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8FB916376049EB271E79C4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Furqan Agwan/Pods-Furqan Agwan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Furqan Agwan/Pods-Furqan Agwan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Furqan Agwan/Pods-Furqan Agwan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C321E2C9231D5C9F003097FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -228,6 +299,7 @@
 				C330804B23212B5800119871 /* Data.swift in Sources */,
 				C321E2D5231D5C9F003097FE /* MainView.swift in Sources */,
 				C34F6DB7231E7A3F00478CD6 /* EmploymentView.swift in Sources */,
+				C3AABEE9237AE6730058D61C /* Icons.swift in Sources */,
 				C34F6DB5231E78D400478CD6 /* AboutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +434,7 @@
 		};
 		C321E2E2231D5CA1003097FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D184FCA0AAA0C62BFC2E8875 /* Pods-Furqan Agwan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,6 +457,7 @@
 		};
 		C321E2E3231D5CA1003097FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE815BF0F060E8E4787E8ED2 /* Pods-Furqan Agwan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

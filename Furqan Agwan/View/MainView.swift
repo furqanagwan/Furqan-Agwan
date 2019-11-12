@@ -15,30 +15,18 @@ struct MainView: View {
                     CustomTab(tabName: "Employment", tabImage: UIImage(systemName: "briefcase.fill")!)
             }
             .tag(2)
-        }.accentColor(Color.red).edgesIgnoringSafeArea(.top)
+        }.accentColor(Color(UIColor(hexString: "E66E64")!)).edgesIgnoringSafeArea(.top)
     }
 }
-
-
-
-
-struct CustomTab: View{
-    
-    var tabName: String
-    var tabImage: UIImage
-    
-    var body: some View{
-        
-        VStack {
-            Text(verbatim: tabName)
-            Image(uiImage: tabImage)
-        }
-        
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
+struct MainApplicationLight_Preview: PreviewProvider {
     static var previews: some View {
         MainView()
     }
 }
+struct MainApplicationDark_Preview: PreviewProvider {
+    static var previews: some View {
+        MainView()
+            .environment(\.colorScheme, .dark)
+    }
+}
+
