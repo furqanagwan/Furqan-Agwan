@@ -13,18 +13,18 @@ struct AboutView: View {
                     userlistCell(cellImage: Icons.furqan, cellName: "Furqan Agwan", additionalInfo: "furqankadri@gmail.com")
                 }
                 Section(header: Text("Work"), content: {
-                    NavigationLink(destination: EducationView()) {
+                    NavigationLink(destination: SafariView(linkURL: URL(string: URLS.GitHub)!)) {
                         userlistCellOptions(cellImage: Icons.Github, cellName: "Github", additionalInfo: "furqanagwan")
                     }
-                    NavigationLink(destination: EducationView()) {
+                    NavigationLink(destination: SafariView(linkURL: URL(string: URLS.LinkedIn)!)) {
                         userlistCellOptions(cellImage: Icons.LinkedIn, cellName: "LinkedIn", additionalInfo: "Furqan Agwan")
                     }
                 })
                 
                 Section (header: Text("Social"), content:  {
-                    NavigationLink(destination: EducationView()) {
+                    NavigationLink(destination: SafariView(linkURL: URL(string: URLS.Twitter)!)) {
                         userlistCellOptions(cellImage: Icons.Twitter, cellName: "Twitter", additionalInfo: "@FurqanKadri")                    }
-                    NavigationLink(destination: EducationView()) {
+                    NavigationLink(destination: SafariView(linkURL: URL(string: URLS.Reddit)!)) {
                         userlistCellOptions(cellImage: Icons.Reddit, cellName: "Reddit", additionalInfo: "Nightwig7")
                     }
                 })

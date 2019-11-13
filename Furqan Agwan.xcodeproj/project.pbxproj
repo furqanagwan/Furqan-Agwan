@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A67735F997F767797C8799C1 /* Pods_Furqan_Agwan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710D1FCFB3DD918D138A55C9 /* Pods_Furqan_Agwan.framework */; };
 		C301F5E0231D7305009B6A25 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301F5DF231D7305009B6A25 /* EducationView.swift */; };
+		C3094EA7237C9C1400A6DEEC /* UIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3094EA6237C9C1400A6DEEC /* UIWebView.swift */; };
 		C30FA031231FA9BE00E68F1B /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FA030231FA9BE00E68F1B /* Components.swift */; };
 		C31AFD542327BD70008A4999 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C31AFD532327BD70008A4999 /* SwifterSwift */; };
 		C321E2D1231D5C9F003097FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E2D0231D5C9F003097FE /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		710D1FCFB3DD918D138A55C9 /* Pods_Furqan_Agwan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Furqan_Agwan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C301F5DF231D7305009B6A25 /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
+		C3094EA6237C9C1400A6DEEC /* UIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebView.swift; sourceTree = "<group>"; };
 		C30FA030231FA9BE00E68F1B /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		C321E2CD231D5C9F003097FE /* Furqan Agwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Furqan Agwan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C321E2D0231D5C9F003097FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,55 @@
 			path = "Sub Views";
 			sourceTree = "<group>";
 		};
+		C3094EA5237C9BA400A6DEEC /* Interfacing */ = {
+			isa = PBXGroup;
+			children = (
+				C3094EA9237C9EEB00A6DEEC /* UIKit */,
+			);
+			path = Interfacing;
+			sourceTree = "<group>";
+		};
+		C3094EA8237C9EC500A6DEEC /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				C3AABEE8237AE6730058D61C /* Icons.swift */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		C3094EA9237C9EEB00A6DEEC /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C3094EA6237C9C1400A6DEEC /* UIWebView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C3094EAA237C9F0000A6DEEC /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				C321E2D4231D5C9F003097FE /* MainView.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		C3094EAB237C9F1500A6DEEC /* Launch View */ = {
+			isa = PBXGroup;
+			children = (
+				C321E2DB231D5CA1003097FE /* LaunchScreen.storyboard */,
+			);
+			path = "Launch View";
+			sourceTree = "<group>";
+		};
+		C3094EAC237C9F8100A6DEEC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C321E2D0231D5C9F003097FE /* AppDelegate.swift */,
+				C321E2D2231D5C9F003097FE /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		C321E2C4231D5C9F003097FE = {
 			isa = PBXGroup;
 			children = (
@@ -116,10 +167,10 @@
 		C321E2E5231D5CD3003097FE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C321E2E6231D5CDA003097FE /* View Components */,
+				C3094EAB237C9F1500A6DEEC /* Launch View */,
+				C3094EAA237C9F0000A6DEEC /* Main View */,
 				C301F5DE231D72E3009B6A25 /* Sub Views */,
-				C321E2DB231D5CA1003097FE /* LaunchScreen.storyboard */,
-				C321E2D4231D5C9F003097FE /* MainView.swift */,
+				C321E2E6231D5CDA003097FE /* View Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,6 +178,7 @@
 		C321E2E6231D5CDA003097FE /* View Components */ = {
 			isa = PBXGroup;
 			children = (
+				C3094EA5237C9BA400A6DEEC /* Interfacing */,
 				C30FA030231FA9BE00E68F1B /* Components.swift */,
 			);
 			path = "View Components";
@@ -143,20 +195,27 @@
 		C321E2E8231D5CEF003097FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C3F129E42379E8DF0039561D /* Networking */,
+				C3094EAC237C9F8100A6DEEC /* Delegates */,
+				C360979D237B56F10035A221 /* Helpers */,
 				C321E2D6231D5CA1003097FE /* Assets.xcassets */,
 				C321E2DE231D5CA1003097FE /* Info.plist */,
-				C321E2D0231D5C9F003097FE /* AppDelegate.swift */,
-				C321E2D2231D5C9F003097FE /* SceneDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C360979D237B56F10035A221 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C3094EA8237C9EC500A6DEEC /* Icon */,
+				C3F129E42379E8DF0039561D /* Networking */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		C3F129E42379E8DF0039561D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				C3F129E52379E8F20039561D /* URL.swift */,
-				C3AABEE8237AE6730058D61C /* Icons.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -294,6 +353,7 @@
 				C321E2D1231D5C9F003097FE /* AppDelegate.swift in Sources */,
 				C301F5E0231D7305009B6A25 /* EducationView.swift in Sources */,
 				C3F129E62379E8F20039561D /* URL.swift in Sources */,
+				C3094EA7237C9C1400A6DEEC /* UIWebView.swift in Sources */,
 				C321E2D3231D5C9F003097FE /* SceneDelegate.swift in Sources */,
 				C30FA031231FA9BE00E68F1B /* Components.swift in Sources */,
 				C330804B23212B5800119871 /* Data.swift in Sources */,

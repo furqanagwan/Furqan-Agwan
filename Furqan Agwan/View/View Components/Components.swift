@@ -1,6 +1,6 @@
 import SwiftUI
 import UIKit
-import WebKit
+import SwifterSwift
 
 struct CircleImage: View {
     
