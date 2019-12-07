@@ -8,8 +8,11 @@ struct EducationView: View {
     var body: some View {
         
         NavigationView {
-            List {
-                Text("Hello")
+            ScrollView (.vertical, showsIndicators: false) {
+                VStack(spacing: 5) {
+                    CardView(cardColor: Color(educationColours.DMU_PRIMARY!), instituteName: "De Montfort University", employeeJobTitle: "Computer Science", yearsActive: 3)
+                    CardView(cardColor: Color(educationColours.BEAUCHAMP_PRIMARY!), instituteName: "Beauchamp College", employeeJobTitle: "A-Levels", yearsActive: 2)
+                }
             }
             .navigationBarTitle(Text(educationText), displayMode: .large)
             .navigationBarItems(leading: naviagtionBarLeftItem() , trailing: navigationBarRightItem())

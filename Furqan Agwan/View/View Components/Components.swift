@@ -68,7 +68,7 @@ struct navigationBarRightItemDone: View{
             self.isOpened.toggle()
         }) {
             Text("Done")
-                .foregroundColor(Color(UIColor(hexString: "E66E64")!))
+                .foregroundColor(Color.white)
         }
     }
 }

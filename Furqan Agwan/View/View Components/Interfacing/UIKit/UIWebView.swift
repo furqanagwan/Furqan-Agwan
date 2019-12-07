@@ -8,7 +8,7 @@ struct SafariView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> SFSafariViewController {
         
         let SFServicesView = SFSafariViewController(url: linkURL)
-        SFServicesView.preferredControlTintColor = UIColor(hexString: "E66E64")
+        SFServicesView.preferredControlTintColor = .white
         
         return SFServicesView
     }

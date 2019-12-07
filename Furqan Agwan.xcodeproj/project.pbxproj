@@ -19,6 +19,8 @@
 		C321E2DA231D5CA1003097FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C321E2D9231D5CA1003097FE /* Preview Assets.xcassets */; };
 		C321E2DD231D5CA1003097FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C321E2DB231D5CA1003097FE /* LaunchScreen.storyboard */; };
 		C330804B23212B5800119871 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C330804A23212B5800119871 /* Data.swift */; };
+		C3318F63239B246600F21F6C /* View_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318F62239B246600F21F6C /* View_Extensions.swift */; };
+		C3318F66239C07AA00F21F6C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318F65239C07AA00F21F6C /* Colors.swift */; };
 		C34F6DB5231E78D400478CD6 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F6DB4231E78D400478CD6 /* AboutView.swift */; };
 		C34F6DB7231E7A3F00478CD6 /* EmploymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F6DB6231E7A3F00478CD6 /* EmploymentView.swift */; };
 		C3AABEE9237AE6730058D61C /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AABEE8237AE6730058D61C /* Icons.swift */; };
@@ -39,6 +41,8 @@
 		C321E2DC231D5CA1003097FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C321E2DE231D5CA1003097FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C330804A23212B5800119871 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C3318F62239B246600F21F6C /* View_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_Extensions.swift; sourceTree = "<group>"; };
+		C3318F65239C07AA00F21F6C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C34F6DB4231E78D400478CD6 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C34F6DB6231E7A3F00478CD6 /* EmploymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmploymentView.swift; sourceTree = "<group>"; };
 		C3AABEE8237AE6730058D61C /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
@@ -203,9 +207,27 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C3318F61239B244900F21F6C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3318F62239B246600F21F6C /* View_Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C3318F64239C079900F21F6C /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				C3318F65239C07AA00F21F6C /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		C360979D237B56F10035A221 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C3318F64239C079900F21F6C /* Colors */,
+				C3318F61239B244900F21F6C /* Extensions */,
 				C3094EA8237C9EC500A6DEEC /* Icon */,
 				C3F129E42379E8DF0039561D /* Networking */,
 			);
@@ -352,11 +374,13 @@
 			files = (
 				C321E2D1231D5C9F003097FE /* AppDelegate.swift in Sources */,
 				C301F5E0231D7305009B6A25 /* EducationView.swift in Sources */,
+				C3318F63239B246600F21F6C /* View_Extensions.swift in Sources */,
 				C3F129E62379E8F20039561D /* URL.swift in Sources */,
 				C3094EA7237C9C1400A6DEEC /* UIWebView.swift in Sources */,
 				C321E2D3231D5C9F003097FE /* SceneDelegate.swift in Sources */,
 				C30FA031231FA9BE00E68F1B /* Components.swift in Sources */,
 				C330804B23212B5800119871 /* Data.swift in Sources */,
+				C3318F66239C07AA00F21F6C /* Colors.swift in Sources */,
 				C321E2D5231D5C9F003097FE /* MainView.swift in Sources */,
 				C34F6DB7231E7A3F00478CD6 /* EmploymentView.swift in Sources */,
 				C3AABEE9237AE6730058D61C /* Icons.swift in Sources */,
