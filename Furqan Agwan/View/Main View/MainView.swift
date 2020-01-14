@@ -1,34 +1,29 @@
 import SwiftUI
 
 struct MainView: View {
-    @State private var selection = 0
+    
+    @State private var tabSelection = 0
     
     var body: some View {
-        TabView(selection: $selection){
-            EducationView()
-                .tabItem {
+        TabView(selection: $tabSelection){
+            EducationView().tabItem {
                     CustomTab(tabName: "Education", tabImage: UIImage(systemName: "book.fill")!)
-            }
-            .tag(1)
-            EmploymentView()
-                .tabItem {
+            }.tag(1)
+            EmploymentView().tabItem {
                     CustomTab(tabName: "Employment", tabImage: UIImage(systemName: "briefcase.fill")!)
-            }
-            .tag(2)
+            }.tag(2)
         }
-        .accentColor(.primary)
         .edgesIgnoringSafeArea(.top)
+        .statusBar(hidden: true)
+        .accentColor(.primary)
     }
 }
-struct MainApplicationDefault_Preview: PreviewProvider {
+struct MainApplication_Preview: PreviewProvider {
     static var previews: some View {
-        MainView()
-    }
-}
-struct MainApplicationLight_Preview: PreviewProvider {
-    static var previews: some View {
-        MainView()
-            .environment(\.colorScheme, .light)
+        Group{
+            MainView().environment(\.colorScheme, .dark)
+            MainView()
+        }
     }
 }
 

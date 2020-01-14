@@ -1,77 +1,7 @@
 import SwiftUI
 import UIKit
-import SwifterSwift
 
-struct CircleImage: View {
-    
-    @State var showAboutView: Bool = false
-    
-    var image: Image
-    var height: CGFloat
-    var width: CGFloat
-    
-    var body: some View {
-        Button(action: {
-            self.showAboutView.toggle()
-        }) {
-            image
-                .resizable()
-                .clipShape(Circle())
-                .overlay(
-                    Circle().stroke(Color.black, lineWidth: 1))
-                .shadow(radius: 10)
-                .frame(width: width, height: height, alignment: .center)
-        }.sheet(isPresented: $showAboutView) {
-            AboutView(isPressed: self.$showAboutView)
-        }
-    }
-}
-
-struct CircleImageStatic: View {
-    
-    var image: Image
-    var height: CGFloat
-    var width: CGFloat
-    
-    var body: some View {
-        image
-            .resizable()
-            .clipShape(Circle())
-            .overlay(
-                Circle().stroke(Color.black, lineWidth: 1))
-            .shadow(radius: 10)
-            .frame(width: width, height: height, alignment: .center)
-    }
-}
-
-struct naviagtionBarLeftItem: View {
-    var body: some View{
-        Text(getCurrentDayString())
-            .foregroundColor(Color.gray)
-            .multilineTextAlignment(.leading)
-    }
-}
-
-struct navigationBarRightItem: View{
-    var body: some View{
-        CircleImage(image: Image("Furqan Agwan"), height: 40, width: 40)
-    }
-}
-
-
-struct navigationBarRightItemDone: View{
-    
-    @Binding var isOpened: Bool
-    
-    var body: some View{
-        Button(action: {
-            self.isOpened.toggle()
-        }) {
-            Text("Done")
-                .foregroundColor(Color.white)
-        }
-    }
-}
+// List cell view
 
 struct userlistCell: View{
     
@@ -96,6 +26,24 @@ struct userlistCell: View{
     }
 }
 
+
+// Done Button View
+struct doneView: View{
+    
+    @Binding var isOpened: Bool
+    
+    var body: some View{
+        Button(action: {
+            self.isOpened.toggle()
+        }) {
+            Text("Done")
+                .foregroundColor(.secondary)
+        }
+    }
+}
+
+
+
 struct userlistCellOptions: View{
     
     let cellImage: UIImage
@@ -119,24 +67,3 @@ struct userlistCellOptions: View{
     }
 }
 
-struct CustomTab: View{
-    
-    var tabName: String
-    var tabImage: UIImage
-    
-    var body: some View{
-        
-        VStack {
-            Text(verbatim: tabName)
-            Image(uiImage: tabImage)
-        }
-        
-    }
-}
-
-struct userlistCellOptions_Preview: PreviewProvider {
-    static var previews: some View {
-        userlistCellOptions(cellImage: Icons.Github, cellName: "Furqan Agwan", additionalInfo: "furqankadri@gmail.com")
-            .previewLayout(.fixed(width: 400, height: 150))
-    }
-}

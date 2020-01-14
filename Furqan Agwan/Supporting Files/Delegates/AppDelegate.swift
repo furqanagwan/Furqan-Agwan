@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Furqan Agwan
-//
-//  Created by Furqan on 02/09/2019.
-//  Copyright © 2019 Furqan.Agwan. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

@@ -18,12 +18,21 @@
 		C321E2D7231D5CA1003097FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C321E2D6231D5CA1003097FE /* Assets.xcassets */; };
 		C321E2DA231D5CA1003097FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C321E2D9231D5CA1003097FE /* Preview Assets.xcassets */; };
 		C321E2DD231D5CA1003097FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C321E2DB231D5CA1003097FE /* LaunchScreen.storyboard */; };
+		C3232F17239FA60D00FDE94F /* StringE.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3232F16239FA60D00FDE94F /* StringE.swift */; };
+		C3232F19239FCC7F00FDE94F /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3232F18239FCC7F00FDE94F /* HostingController.swift */; };
 		C330804B23212B5800119871 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C330804A23212B5800119871 /* Data.swift */; };
 		C3318F63239B246600F21F6C /* View_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318F62239B246600F21F6C /* View_Extensions.swift */; };
 		C3318F66239C07AA00F21F6C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318F65239C07AA00F21F6C /* Colors.swift */; };
 		C34F6DB5231E78D400478CD6 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F6DB4231E78D400478CD6 /* AboutView.swift */; };
 		C34F6DB7231E7A3F00478CD6 /* EmploymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F6DB6231E7A3F00478CD6 /* EmploymentView.swift */; };
+		C37EB59A239D2B4400FCCAD0 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EB599239D2B4400FCCAD0 /* Card.swift */; };
+		C37EB59C239D4E3B00FCCAD0 /* UIPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EB59B239D4E3B00FCCAD0 /* UIPageControl.swift */; };
+		C37EB59F239D6C3800FCCAD0 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EB59E239D6C3800FCCAD0 /* Image.swift */; };
+		C37EB5A6239E952D00FCCAD0 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EB5A5239E952D00FCCAD0 /* CircleImage.swift */; };
+		C37EB5A9239E970D00FCCAD0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EB5A8239E970D00FCCAD0 /* TabBar.swift */; };
+		C37EB5AC239E976C00FCCAD0 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EB5AB239E976C00FCCAD0 /* InformationView.swift */; };
 		C3AABEE9237AE6730058D61C /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AABEE8237AE6730058D61C /* Icons.swift */; };
+		C3D23897239ED2570014332C /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D23896239ED2570014332C /* Control.swift */; };
 		C3F129E62379E8F20039561D /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F129E52379E8F20039561D /* URL.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +41,7 @@
 		C301F5DF231D7305009B6A25 /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
 		C3094EA6237C9C1400A6DEEC /* UIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebView.swift; sourceTree = "<group>"; };
 		C30FA030231FA9BE00E68F1B /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
-		C321E2CD231D5C9F003097FE /* Furqan Agwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Furqan Agwan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C321E2CD231D5C9F003097FE /* Bullet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C321E2D0231D5C9F003097FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C321E2D2231D5C9F003097FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C321E2D4231D5C9F003097FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -40,12 +49,22 @@
 		C321E2D9231D5CA1003097FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C321E2DC231D5CA1003097FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C321E2DE231D5CA1003097FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3232F16239FA60D00FDE94F /* StringE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringE.swift; sourceTree = "<group>"; };
+		C3232F18239FCC7F00FDE94F /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		C330804A23212B5800119871 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C3318F62239B246600F21F6C /* View_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_Extensions.swift; sourceTree = "<group>"; };
 		C3318F65239C07AA00F21F6C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C34F6DB4231E78D400478CD6 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C34F6DB6231E7A3F00478CD6 /* EmploymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmploymentView.swift; sourceTree = "<group>"; };
+		C37EB599239D2B4400FCCAD0 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C37EB59B239D4E3B00FCCAD0 /* UIPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControl.swift; sourceTree = "<group>"; };
+		C37EB59E239D6C3800FCCAD0 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		C37EB5A3239E93E400FCCAD0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C37EB5A5239E952D00FCCAD0 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		C37EB5A8239E970D00FCCAD0 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		C37EB5AB239E976C00FCCAD0 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		C3AABEE8237AE6730058D61C /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		C3D23896239ED2570014332C /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
 		C3F129E52379E8F20039561D /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		D184FCA0AAA0C62BFC2E8875 /* Pods-Furqan Agwan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Furqan Agwan.debug.xcconfig"; path = "Target Support Files/Pods-Furqan Agwan/Pods-Furqan Agwan.debug.xcconfig"; sourceTree = "<group>"; };
 		DE815BF0F060E8E4787E8ED2 /* Pods-Furqan Agwan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Furqan Agwan.release.xcconfig"; path = "Target Support Files/Pods-Furqan Agwan/Pods-Furqan Agwan.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				C3094EA6237C9C1400A6DEEC /* UIWebView.swift */,
+				C37EB59B239D4E3B00FCCAD0 /* UIPageControl.swift */,
+				C3232F18239FCC7F00FDE94F /* HostingController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -144,7 +165,7 @@
 		C321E2CE231D5C9F003097FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C321E2CD231D5C9F003097FE /* Furqan Agwan.app */,
+				C321E2CD231D5C9F003097FE /* Bullet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +173,7 @@
 		C321E2CF231D5C9F003097FE /* Furqan Agwan */ = {
 			isa = PBXGroup;
 			children = (
+				C37EB5A3239E93E400FCCAD0 /* README.md */,
 				C321E2E8231D5CEF003097FE /* Supporting Files */,
 				C321E2E7231D5CE6003097FE /* Model */,
 				C321E2E5231D5CD3003097FE /* View */,
@@ -182,6 +204,10 @@
 		C321E2E6231D5CDA003097FE /* View Components */ = {
 			isa = PBXGroup;
 			children = (
+				C37EB5AA239E975100FCCAD0 /* Infomation View */,
+				C37EB5A7239E96E400FCCAD0 /* Tab bar */,
+				C37EB5A4239E950D00FCCAD0 /* Circle Image */,
+				C37EB598239D2B3200FCCAD0 /* Card */,
 				C3094EA5237C9BA400A6DEEC /* Interfacing */,
 				C30FA030231FA9BE00E68F1B /* Components.swift */,
 			);
@@ -199,12 +225,37 @@
 		C321E2E8231D5CEF003097FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3232F13239FA5DF00FDE94F /* Extensions */,
 				C3094EAC237C9F8100A6DEEC /* Delegates */,
 				C360979D237B56F10035A221 /* Helpers */,
 				C321E2D6231D5CA1003097FE /* Assets.xcassets */,
 				C321E2DE231D5CA1003097FE /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3232F13239FA5DF00FDE94F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3232F14239FA5E900FDE94F /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C3232F14239FA5E900FDE94F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C3232F15239FA5F500FDE94F /* String */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C3232F15239FA5F500FDE94F /* String */ = {
+			isa = PBXGroup;
+			children = (
+				C3232F16239FA60D00FDE94F /* StringE.swift */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 		C3318F61239B244900F21F6C /* Extensions */ = {
@@ -226,12 +277,62 @@
 		C360979D237B56F10035A221 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C3D23893239ED2010014332C /* Page Control */,
+				C37EB59D239D6C2C00FCCAD0 /* Images */,
 				C3318F64239C079900F21F6C /* Colors */,
 				C3318F61239B244900F21F6C /* Extensions */,
 				C3094EA8237C9EC500A6DEEC /* Icon */,
 				C3F129E42379E8DF0039561D /* Networking */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C37EB598239D2B3200FCCAD0 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				C37EB599239D2B4400FCCAD0 /* Card.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		C37EB59D239D6C2C00FCCAD0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C37EB59E239D6C3800FCCAD0 /* Image.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C37EB5A4239E950D00FCCAD0 /* Circle Image */ = {
+			isa = PBXGroup;
+			children = (
+				C37EB5A5239E952D00FCCAD0 /* CircleImage.swift */,
+			);
+			path = "Circle Image";
+			sourceTree = "<group>";
+		};
+		C37EB5A7239E96E400FCCAD0 /* Tab bar */ = {
+			isa = PBXGroup;
+			children = (
+				C37EB5A8239E970D00FCCAD0 /* TabBar.swift */,
+			);
+			path = "Tab bar";
+			sourceTree = "<group>";
+		};
+		C37EB5AA239E975100FCCAD0 /* Infomation View */ = {
+			isa = PBXGroup;
+			children = (
+				C37EB5AB239E976C00FCCAD0 /* InformationView.swift */,
+			);
+			path = "Infomation View";
+			sourceTree = "<group>";
+		};
+		C3D23893239ED2010014332C /* Page Control */ = {
+			isa = PBXGroup;
+			children = (
+				C3D23896239ED2570014332C /* Control.swift */,
+			);
+			path = "Page Control";
 			sourceTree = "<group>";
 		};
 		C3F129E42379E8DF0039561D /* Networking */ = {
@@ -273,7 +374,7 @@
 				C31AFD532327BD70008A4999 /* SwifterSwift */,
 			);
 			productName = "Furqan Agwan";
-			productReference = C321E2CD231D5C9F003097FE /* Furqan Agwan.app */;
+			productReference = C321E2CD231D5C9F003097FE /* Bullet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -376,14 +477,23 @@
 				C301F5E0231D7305009B6A25 /* EducationView.swift in Sources */,
 				C3318F63239B246600F21F6C /* View_Extensions.swift in Sources */,
 				C3F129E62379E8F20039561D /* URL.swift in Sources */,
+				C3232F17239FA60D00FDE94F /* StringE.swift in Sources */,
 				C3094EA7237C9C1400A6DEEC /* UIWebView.swift in Sources */,
 				C321E2D3231D5C9F003097FE /* SceneDelegate.swift in Sources */,
 				C30FA031231FA9BE00E68F1B /* Components.swift in Sources */,
 				C330804B23212B5800119871 /* Data.swift in Sources */,
 				C3318F66239C07AA00F21F6C /* Colors.swift in Sources */,
+				C37EB5A9239E970D00FCCAD0 /* TabBar.swift in Sources */,
+				C37EB59F239D6C3800FCCAD0 /* Image.swift in Sources */,
+				C37EB59C239D4E3B00FCCAD0 /* UIPageControl.swift in Sources */,
+				C37EB59A239D2B4400FCCAD0 /* Card.swift in Sources */,
 				C321E2D5231D5C9F003097FE /* MainView.swift in Sources */,
 				C34F6DB7231E7A3F00478CD6 /* EmploymentView.swift in Sources */,
+				C37EB5A6239E952D00FCCAD0 /* CircleImage.swift in Sources */,
 				C3AABEE9237AE6730058D61C /* Icons.swift in Sources */,
+				C3D23897239ED2570014332C /* Control.swift in Sources */,
+				C37EB5AC239E976C00FCCAD0 /* InformationView.swift in Sources */,
+				C3232F19239FCC7F00FDE94F /* HostingController.swift in Sources */,
 				C34F6DB5231E78D400478CD6 /* AboutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,7 +643,7 @@
 				);
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Furqan-Agwan.Furqan-Agwan";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Bullet;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -556,7 +666,7 @@
 				);
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Furqan-Agwan.Furqan-Agwan";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Bullet;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

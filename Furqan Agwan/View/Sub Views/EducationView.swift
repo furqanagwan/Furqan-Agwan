@@ -2,34 +2,37 @@ import SwiftUI
 import SwifterSwift
 
 struct EducationView: View {
+    //Accesibility varibles
+    let screenBounds = UIScreen.main.bounds
     
+    //String Variables
     let educationText: String = "Education"
     
+    //SwiftUI List is a TabelView in the background
+    init() {
+        UITableView.appearance().separatorStyle = .none
+    }
+    
     var body: some View {
-        
-        NavigationView {
-            ScrollView (.vertical, showsIndicators: false) {
+        List{
+            ScrollView (.vertical) {
+                informationView(viewTitle: educationText)
                 VStack(spacing: 5) {
-                    CardView(cardColor: Color(educationColours.DMU_PRIMARY!), instituteName: "De Montfort University", employeeJobTitle: "Computer Science", yearsActive: 3)
-                    CardView(cardColor: Color(educationColours.BEAUCHAMP_PRIMARY!), instituteName: "Beauchamp College", employeeJobTitle: "A-Levels", yearsActive: 2)
+                    CardView(instituteColor: Color(educationColours.DMU_SECONDARY!), instituteName: "De Montfort University", instituteRole: "BSc Computer Science", instituteImage: educationImages.DEMONTFORTUNIVERSITY, yearsAtInstitute: 3)
+                    CardView(instituteColor: Color(educationColours.BEAUCHAMP_THIRD), instituteName: "Beauchamp College", instituteRole: "A-Levels", instituteImage: educationImages.BEAUCHAMPCOLLEGE, yearsAtInstitute: 2)
+                    CardView(instituteColor: Color(educationColours.MANORHIGH_PRIMARY!), instituteName: "Manor High School", instituteRole: "GCSE", instituteImage: educationImages.MANOR_HIGH_SCHOOL, yearsAtInstitute: 4)
                 }
             }
-            .navigationBarTitle(Text(educationText), displayMode: .large)
-            .navigationBarItems(leading: naviagtionBarLeftItem() , trailing: navigationBarRightItem())
-        }
+        }.frame(maxWidth: .infinity)
     }
-}
-
-
-
-func getCurrentDayString() -> String {
-    let dateObject :  Date = Date()
-    let currentDay : String = dateObject.dayName() + " " +  dateObject.day.string + " " + dateObject.monthName()
-    return currentDay
 }
 
 struct EducationView_Previews: PreviewProvider {
     static var previews: some View {
-        EducationView()
+        
+        Group{
+            EducationView()
+            EducationView().environment(\.colorScheme, .dark)
+        }
     }
 }
