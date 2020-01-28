@@ -1,8 +1,6 @@
 import SwiftUI
 import UIKit
 
-// List cell view
-
 struct userlistCell: View{
     
     let cellImage: UIImage
@@ -22,12 +20,8 @@ struct userlistCell: View{
                     .foregroundColor(Color.gray)
             })
         }
-        
     }
 }
-
-
-// Done Button View
 struct doneView: View{
     
     @Binding var isOpened: Bool
@@ -41,9 +35,6 @@ struct doneView: View{
         }
     }
 }
-
-
-
 struct userlistCellOptions: View{
     
     let cellImage: UIImage

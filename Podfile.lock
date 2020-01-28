@@ -1,0 +1,16 @@
+PODS:
+  - SwiftIcons (2.3.2)
+
+DEPENDENCIES:
+  - SwiftIcons
+
+SPEC REPOS:
+  trunk:
+    - SwiftIcons
+
+SPEC CHECKSUMS:
+  SwiftIcons: e652cfd2676441c462ad57b6e92977faf577e590
+
+PODFILE CHECKSUM: 9bfed0f54064dc1f5267b07156d36b3175cce876
+
+COCOAPODS: 1.8.4

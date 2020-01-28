@@ -18,7 +18,7 @@
 		C321E2D7231D5CA1003097FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C321E2D6231D5CA1003097FE /* Assets.xcassets */; };
 		C321E2DA231D5CA1003097FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C321E2D9231D5CA1003097FE /* Preview Assets.xcassets */; };
 		C321E2DD231D5CA1003097FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C321E2DB231D5CA1003097FE /* LaunchScreen.storyboard */; };
-		C3232F17239FA60D00FDE94F /* StringE.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3232F16239FA60D00FDE94F /* StringE.swift */; };
+		C3232F17239FA60D00FDE94F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3232F16239FA60D00FDE94F /* StringExtension.swift */; };
 		C3232F19239FCC7F00FDE94F /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3232F18239FCC7F00FDE94F /* HostingController.swift */; };
 		C330804B23212B5800119871 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C330804A23212B5800119871 /* Data.swift */; };
 		C3318F63239B246600F21F6C /* View_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318F62239B246600F21F6C /* View_Extensions.swift */; };
@@ -41,7 +41,7 @@
 		C301F5DF231D7305009B6A25 /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
 		C3094EA6237C9C1400A6DEEC /* UIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebView.swift; sourceTree = "<group>"; };
 		C30FA030231FA9BE00E68F1B /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
-		C321E2CD231D5C9F003097FE /* Bullet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C321E2CD231D5C9F003097FE /* Infinite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infinite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C321E2D0231D5C9F003097FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C321E2D2231D5C9F003097FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C321E2D4231D5C9F003097FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		C321E2D9231D5CA1003097FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C321E2DC231D5CA1003097FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C321E2DE231D5CA1003097FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3232F16239FA60D00FDE94F /* StringE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringE.swift; sourceTree = "<group>"; };
+		C3232F16239FA60D00FDE94F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		C3232F18239FCC7F00FDE94F /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		C330804A23212B5800119871 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C3318F62239B246600F21F6C /* View_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_Extensions.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		C321E2CE231D5C9F003097FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C321E2CD231D5C9F003097FE /* Bullet.app */,
+				C321E2CD231D5C9F003097FE /* Infinite.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,7 +253,7 @@
 		C3232F15239FA5F500FDE94F /* String */ = {
 			isa = PBXGroup;
 			children = (
-				C3232F16239FA60D00FDE94F /* StringE.swift */,
+				C3232F16239FA60D00FDE94F /* StringExtension.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -374,7 +374,7 @@
 				C31AFD532327BD70008A4999 /* SwifterSwift */,
 			);
 			productName = "Furqan Agwan";
-			productReference = C321E2CD231D5C9F003097FE /* Bullet.app */;
+			productReference = C321E2CD231D5C9F003097FE /* Infinite.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -477,7 +477,7 @@
 				C301F5E0231D7305009B6A25 /* EducationView.swift in Sources */,
 				C3318F63239B246600F21F6C /* View_Extensions.swift in Sources */,
 				C3F129E62379E8F20039561D /* URL.swift in Sources */,
-				C3232F17239FA60D00FDE94F /* StringE.swift in Sources */,
+				C3232F17239FA60D00FDE94F /* StringExtension.swift in Sources */,
 				C3094EA7237C9C1400A6DEEC /* UIWebView.swift in Sources */,
 				C321E2D3231D5C9F003097FE /* SceneDelegate.swift in Sources */,
 				C30FA031231FA9BE00E68F1B /* Components.swift in Sources */,
@@ -631,6 +631,7 @@
 			baseConfigurationReference = D184FCA0AAA0C62BFC2E8875 /* Pods-Furqan Agwan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Furqan Agwan/Preview Content\"";
@@ -643,7 +644,8 @@
 				);
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Furqan-Agwan.Furqan-Agwan";
-				PRODUCT_NAME = Bullet;
+				PRODUCT_NAME = Infinite;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -654,6 +656,7 @@
 			baseConfigurationReference = DE815BF0F060E8E4787E8ED2 /* Pods-Furqan Agwan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"Furqan Agwan/Preview Content\"";
@@ -666,7 +669,8 @@
 				);
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Furqan-Agwan.Furqan-Agwan";
-				PRODUCT_NAME = Bullet;
+				PRODUCT_NAME = Infinite;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

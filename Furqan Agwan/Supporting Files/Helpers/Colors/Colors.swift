@@ -1,7 +1,5 @@
-import Foundation
 import SwifterSwift
 import UIKit
-
 
 struct employmentColours{
     
@@ -18,8 +16,6 @@ struct employmentColours{
     static let HASTINGS_PRIMARY = UIColor.init(hexString: "ee4741")
     static let HASTINGS_SECONDARY = UIColor.init(hexString: "0066a0")
     static let HASTINGS_THIRD = UIColor.init(hexString: "ffffff")
-    
-    
 }
 
 struct educationColours{

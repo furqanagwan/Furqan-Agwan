@@ -2,17 +2,11 @@ import SwiftUI
 import SwifterSwift
 
 struct EducationView: View {
-    //Accesibility varibles
     let screenBounds = UIScreen.main.bounds
-    
-    //String Variables
     let educationText: String = "Education"
-    
-    //SwiftUI List is a TabelView in the background
     init() {
         UITableView.appearance().separatorStyle = .none
     }
-    
     var body: some View {
         List{
             ScrollView (.vertical) {
@@ -24,15 +18,5 @@ struct EducationView: View {
                 }
             }
         }.frame(maxWidth: .infinity)
-    }
-}
-
-struct EducationView_Previews: PreviewProvider {
-    static var previews: some View {
-        
-        Group{
-            EducationView()
-            EducationView().environment(\.colorScheme, .dark)
-        }
     }
 }

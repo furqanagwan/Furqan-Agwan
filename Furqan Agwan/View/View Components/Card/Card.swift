@@ -1,6 +1,5 @@
 import Foundation
 import SwiftUI
-import VideoPlayer
 
 struct CardView: View{
     
