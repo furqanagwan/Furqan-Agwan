@@ -1,5 +1,4 @@
 import SwiftUI
-import UIKit
 
 struct userlistCell: View{
     
@@ -19,19 +18,6 @@ struct userlistCell: View{
                 Text(additionalInfo)
                     .foregroundColor(Color.gray)
             })
-        }
-    }
-}
-struct doneView: View{
-    
-    @Binding var isOpened: Bool
-    
-    var body: some View{
-        Button(action: {
-            self.isOpened.toggle()
-        }) {
-            Text("Done")
-                .foregroundColor(.secondary)
         }
     }
 }
@@ -57,4 +43,3 @@ struct userlistCellOptions: View{
         
     }
 }
-

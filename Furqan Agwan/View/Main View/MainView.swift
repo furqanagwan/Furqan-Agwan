@@ -19,8 +19,7 @@ struct MainView: View {
 struct MainApplication_Preview: PreviewProvider {
     static var previews: some View {
         Group{
-            MainView().environment(\.colorScheme, .dark)
-            MainView()
+    MainView().previewDevice(PreviewDevice(rawValue: "iPhone 11"))
         }
     }
 }

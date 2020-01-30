@@ -70,11 +70,3 @@ struct CardView_Preview: PreviewProvider {
             .previewLayout(.fixed(width: 500, height: 500))
     }
 }
-
-
-//Animation effect may need to use at later stage onece
-
-//.scaleEffect(tappedGesture ? 0.97 : 1).gesture(LongPressGesture(minimumDuration: 1.0).updating($tappedGesture){ value, state, transcation in
-//    state = value})
-//    .animation(.easeInOut)
-//,

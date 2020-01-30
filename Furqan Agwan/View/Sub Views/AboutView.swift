@@ -30,6 +30,9 @@ struct AboutView: View {
             .navigationBarTitle(Text(userTitle), displayMode: .inline)
             .navigationBarItems(trailing: doneView(isOpened: $isPressed))
         }.listStyle(GroupedListStyle())
+            .onAppear {
+            UINavigationBar.appearance().tintColor = UIColor(light: .black, dark: .white)
+        }
     }
 }
 
