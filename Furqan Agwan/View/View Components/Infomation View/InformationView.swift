@@ -7,7 +7,7 @@ struct informationView: View {
         
         HStack(alignment: VerticalAlignment.center, spacing: 150) {
             VStack(alignment: .leading, spacing: 5) {
-                Text(verbatim: String().curretDay)
+                Text(verbatim: Date().curretDay)
         .font(.system(size: 15))
         .foregroundColor(Color.gray)
         .multilineTextAlignment(.leading)

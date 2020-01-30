@@ -1,4 +1,3 @@
-import Foundation
 import SwiftUI
 
 struct CircleImage: View {
@@ -16,7 +15,7 @@ struct CircleImage: View {
                 .resizable()
                 .clipShape(Circle())
                 .overlay(
-                    Circle().stroke(Color.black, lineWidth: 1))
+                    Circle().stroke(Color.primary, lineWidth: 1))
                 .frame(width: width, height: height, alignment: .center)
         }.sheet(isPresented: $showAboutView) {
             AboutView(isPressed: self.$showAboutView)
@@ -34,7 +33,7 @@ struct CircleImageStatic: View {
             .resizable()
             .clipShape(Circle())
             .overlay(
-                Circle().stroke(Color.black, lineWidth: 1))
+                Circle().stroke(Color.primary, lineWidth: 1))
             .frame(width: width, height: height, alignment: .center)
     }
 }

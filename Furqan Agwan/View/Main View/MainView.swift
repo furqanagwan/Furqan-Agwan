@@ -20,6 +20,7 @@ struct MainApplication_Preview: PreviewProvider {
     static var previews: some View {
         Group{
     MainView().previewDevice(PreviewDevice(rawValue: "iPhone 11"))
+        MainView().previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro"))
         }
     }
 }
